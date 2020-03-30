@@ -10,6 +10,8 @@ import { ListeComponent } from './liste/liste.component';
 import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 import {HttpClient, HttpClientModule} from '@angular/common/http';
+import { NgwWowModule } from 'ngx-wow';
+import { DetailComponent } from './detail/detail.component';
 
 @NgModule({
   declarations: [
@@ -17,10 +19,12 @@ import {HttpClient, HttpClientModule} from '@angular/common/http';
     HeaderComponent,
     CarouselComponent,
     FooterComponent,
-    ListeComponent
+    ListeComponent,
+    DetailComponent
   ],
   imports: [
     BrowserModule,
+    NgwWowModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
     HttpClientModule,
