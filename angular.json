@@ -22,7 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "aot": false,
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -35,12 +35,15 @@
               "node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap.scss",
               "node_modules/angular-bootstrap-md/assets/scss/mdb.scss",
               "node_modules/animate.css/animate.css",
+              "node_modules/animate.css/animate.css",
+              "node_modules/animate.css/animate.min.css",
               "src/styles.scss"
-          ],
-          "scripts": [
-            "node_modules/chart.js/dist/Chart.js",
-            "node_modules/hammerjs/hammer.min.js"
-          ]
+            ],
+            "scripts": [
+              "node_modules/chart.js/dist/Chart.js",
+              "node_modules/hammerjs/hammer.min.js",
+              "node_modules/wowjs/dist/wow.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -55,7 +58,6 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
               "buildOptimizer": true,
@@ -134,6 +136,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "koulouchey"
+    }
+  },
+  "defaultProject": "koulouchey",
+  "cli": {
+    "analytics": "f8168013-8c18-4292-9220-14e5a664e139"
+  }
 }
