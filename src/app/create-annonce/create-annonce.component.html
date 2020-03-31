@@ -1,0 +1,64 @@
+<!-- Material form register -->
+<div class="card colonne-centree col-sm-12 col-md-9">
+
+    <h5 class="card-header info-color white-text text-center py-4">
+        <strong>{{'create.annonce' | translate}}</strong>
+    </h5>
+
+    <!--Card content-->
+    <div class="card-body px-lg-5 pt-0">
+
+        <!-- Form -->
+        <form class="text-center" style="color: #757575;" action="#!">
+
+            <div class="form-row">
+                <div class="col-md-4 col-sm-12">
+                    <!-- First name -->
+                    <div class="md-form">
+                        <input type="text" id="libelle" placeholder="{{'annonce.create.libelle'| translate}}" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <!-- First name -->
+                    <div class="md-form">
+                        <input type="number" id="montant" placeholder="{{'annonce.create.montant'| translate}}" class="form-control">
+                    </div>
+                </div>
+
+                <div class="col-md-4 col-sm-12">
+                    <div class="md-form">
+                        <select class="browser-default custom-select">
+                            <option selected>{{'annonce.create.categorie' | translate}}</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                          </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="col-md-12">
+                    <div class="md-form">
+                        <textarea type="text" id="description" name="description" rows="2" class="form-control md-textarea"></textarea>
+                        <label for="description">{{'annonce.create.description' | translate}}</label>
+                    </div>
+                </div>
+                </div>
+            
+            <!-- Sign up button -->
+            <button class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit">OK</button>
+
+            <!-- Terms of service -->
+            <p>By clicking
+                <em>Sign up</em> you agree to our
+                <a href="" target="_blank">terms of service</a>
+
+        </form>
+        <!-- Form -->
+
+    </div>
+
+</div>
+<!-- Material form register -->

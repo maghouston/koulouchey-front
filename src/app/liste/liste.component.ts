@@ -8,6 +8,8 @@ import { AnnoncesService } from '../services/annonces.service';
 })
 export class ListeComponent implements OnInit {
 
+  showSpinner: boolean = true;
+  showErrorPane: boolean = false;
   constructor(private annonceService: AnnoncesService) { }
 
   annonces = [];
@@ -18,6 +20,12 @@ export class ListeComponent implements OnInit {
     this.annonceService.getAnnonces(this.page,this.offset).subscribe(data=>{
       this.annonces = data.content;
       this.page = this.page+1;
+      this.showSpinner = false;
+    },
+    (err)=>{
+      this.showSpinner = false;
+      this.showErrorPane = true;
+      console.log(err);
     });
   }
 

@@ -6,6 +6,16 @@
     "propos":"A propos",
     "blog":"Blog",
     "solution":"Solutions",
-    "partenaire":"Nos partenaires"
+    "partenaire":"Nos partenaires",
+    "server.error":"Une erreur serveur s'est produite.",
+    "create.annonce":"Créer une annonce",
+    "annonce" :{
+        "create" :{
+            "libelle":"Titre",
+            "categorie":"Catégorie",
+            "montant":"Montant",
+            "description":"description"
+        }
+    }
 
 }

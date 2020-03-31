@@ -28,3 +28,33 @@ header,
 .rgba-black-strong, .rgba-black-strong:after {
     background-color: rgba(142, 110, 110, 0.7)!important;
 }
+
+
+  @media (min-width: 800px) {
+    .colonne-centree{
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5%;
+    }
+  }
+
+  @media (max-width: 800px) {
+    .colonne-centree{
+      float: none;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 16%;
+    }
+  }
+.white{
+  background-color: #929fba!important;
+}
+
+.info-color {
+  background-color: #ccc5d6 !important;
+}
+
+.navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
+  color: #e9ecef;
+}
