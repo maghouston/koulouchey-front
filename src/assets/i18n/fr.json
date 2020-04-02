@@ -12,9 +12,10 @@
     "annonce" :{
         "create" :{
             "libelle":"Titre",
-            "categorie":"Catégorie",
+            "categorie":"Choisissez une catégorie",
             "montant":"Montant",
-            "description":"description"
+            "description":"description",
+            "fichier":"Prendre une photo"
         }
     }
 

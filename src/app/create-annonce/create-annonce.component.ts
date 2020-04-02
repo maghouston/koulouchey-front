@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AnnoncesService } from '../services/annonces.service';
+import { ReferencesService } from '../services/references.service';
 
 @Component({
   selector: 'app-create-annonce',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CreateAnnonceComponent implements OnInit {
 
-  constructor() { }
+  constructor(private annonceService: AnnoncesService, private referenceService: ReferencesService ) { }
+
+    categories = [];
 
   ngOnInit(): void {
+    this.referenceService.getCategories().subscribe(data=>{
+      this.categories = data;
+    });
   }
 
 }

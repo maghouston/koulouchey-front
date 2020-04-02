@@ -52,9 +52,25 @@ header,
 }
 
 .info-color {
-  background-color: #ccc5d6 !important;
+  background-color: #73808a !important;
 }
 
 .navbar-light .navbar-nav .show > .nav-link, .navbar-light .navbar-nav .active > .nav-link, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .nav-link.active {
   color: #e9ecef;
+}
+.custom-file{
+  margin-top: 30px !important;
+}
+
+.error-border {border-left: 5px solid red} 
+.success-border {border-left: 5px solid green}
+
+.mb-4, .my-4 {
+  margin-bottom: 0.3rem !important;
+  margin-top: 0.5rem;
+}
+
+.error-messages{
+  font-size: 9px;
+  color: red;
 }

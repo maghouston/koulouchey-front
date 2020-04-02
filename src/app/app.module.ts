@@ -14,6 +14,8 @@ import { NgwWowModule } from 'ngx-wow';
 import { DetailComponent } from './detail/detail.component';
 import { LoginComponent } from './login/login.component';
 import { CreateAnnonceComponent } from './create-annonce/create-annonce.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { AuthInterceptor } from './services/auth-interceptor.service';
 
 @NgModule({
   declarations: [
@@ -29,6 +31,8 @@ import { CreateAnnonceComponent } from './create-annonce/create-annonce.componen
   imports: [
     BrowserModule,
     NgwWowModule,
+    FormsModule,
+    ReactiveFormsModule,
     AppRoutingModule,
     MDBBootstrapModule.forRoot(),
     HttpClientModule,
@@ -40,7 +44,7 @@ import { CreateAnnonceComponent } from './create-annonce/create-annonce.componen
             }
         })
   ],
-  providers: [],
+  providers: [AuthInterceptor],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

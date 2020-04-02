@@ -1,30 +1,32 @@
 <div class="col-sm-12 col-md-4 text-center colonne-centree">
     <div class="container">
-        <form class="border border-light p-5" style="margin-top: 17%;">
+        <form class="border border-light p-5" style="margin-top: 17%;" [formGroup]="registerForm" (ngSubmit)="onSubmit()">
 
             <p class="h4 mb-4 text-center">Connexion</p>
         
-            <input type="email" id="defaultLoginFormEmail" class="form-control mb-4" placeholder="E-mail">
+            <input type="text" [ngClass]="{'error-border' : submitted && f.login.errors && f.login.errors.required}" id="login" class="form-control mb-4" formControlName="login" placeholder="Login">
+            <span *ngIf="submitted && f.login.errors && f.login.errors.required" class="error-messages">Votre login est obligatoire</span>
         
-            <input type="password" id="defaultLoginFormPassword" class="form-control mb-4" placeholder="Password">
-        
+            <input [ngClass]="{'error-border' : submitted && f.password.errors && f.password.errors.required}" type="password" id="password" class="form-control mb-4" formControlName="password" placeholder="Password">
+            <span *ngIf="submitted && f.password.errors && f.password.errors.required" class="error-messages">Votre mot de passe est obligatoire</span>
+            
             <div class="d-flex justify-content-between">
                 <div>
                     <div class="custom-control custom-checkbox">
                         <input type="checkbox" class="custom-control-input" id="defaultLoginFormRemember">
-                        <label class="custom-control-label" for="defaultLoginFormRemember">Remember me</label>
+                        <label class="custom-control-label" for="defaultLoginFormRemember">Se souvenir de moi</label>
                     </div>
                 </div>
                 <div>
-                    <a href="">Forgot password?</a>
+                    <a href="">Mot de passe oublié?</a>
                 </div>
             </div>
         
-            <button class="btn btn-info btn-block my-4" type="submit">Sign in</button>
+            <button class="btn btn-info btn-block my-4" type="submit">Connexion</button>
         
             <div class="text-center">
-                <p>Not a member?
-                    <a href="">Register</a>
+                <p>Pas de compte?
+                    <a href="">Créer votre compte</a>
                 </p>
         
                 <p>or sign in with:</p>
