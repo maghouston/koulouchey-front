@@ -38,6 +38,10 @@ export class LoginComponent implements OnInit {
     // display form values on success
     this.authenticationService.login(this.registerForm.value).subscribe(data=>{
       this.tokenStorageService.saveToken(data.token);
+      let userConnected: any = {};
+      userConnected.id = data.id;
+      userConnected.username = data.login;
+      this.tokenStorageService.saveUser(userConnected);
       this.router.navigate(['/liste']);
     });
   
