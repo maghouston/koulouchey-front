@@ -4,6 +4,7 @@ import { ListeComponent } from './liste/liste.component';
 import { DetailComponent } from './detail/detail.component';
 import { LoginComponent } from './login/login.component';
 import { CreateAnnonceComponent } from './create-annonce/create-annonce.component';
+import { FilterFormComponent } from './filter-form/filter-form.component';
 
 
 const routes: Routes = [

@@ -16,6 +16,7 @@ import { LoginComponent } from './login/login.component';
 import { CreateAnnonceComponent } from './create-annonce/create-annonce.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { AuthInterceptor } from './services/auth-interceptor.service';
+import { FilterFormComponent } from './filter-form/filter-form.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { AuthInterceptor } from './services/auth-interceptor.service';
     ListeComponent,
     DetailComponent,
     LoginComponent,
-    CreateAnnonceComponent
+    CreateAnnonceComponent,
+    FilterFormComponent
   ],
   imports: [
     BrowserModule,
