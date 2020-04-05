@@ -8,6 +8,8 @@
     "solution":"Solutions",
     "partenaire":"Nos partenaires",
     "server.error":"Une erreur serveur s'est produite.",
+    "proposer.annonce":"Proposer une annonce",
+    "deconnexion":"Déconnexion",
     "create.annonce":"Créer une annonce",
     "annonce" :{
         "create" :{

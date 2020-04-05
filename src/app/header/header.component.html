@@ -53,9 +53,21 @@
               <i class="fab fa-twitter"></i>
             </a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item header-button" >
+            <a href="/create-annonce" class="nav-link border border-light rounded waves-effect">
+              <i class="fa fa-fw fa-plus mr-2"></i>{{'proposer.annonce' | translate}}
+            </a>
+          </li>
+          &nbsp;
+          <li class="nav-item header-button" *ngIf="showConnect()">
             <a href="/login" class="nav-link border border-light rounded waves-effect">
-              <i class="fab fa-user-tie mr-2"></i>{{'espace' | translate}}
+              <i class="fa fa-fw fa-user mr-2"></i>{{'espace' | translate}}
+            </a>
+          </li>
+
+          <li class="nav-item header-button" *ngIf="!showConnect()">
+            <a  class="nav-link border border-light rounded waves-effect" (click)="deconnexion()">
+              <i class="fa fa-fw fa-user mr-2"></i>{{'deconnexion' | translate}}
             </a>
           </li>
         </ul>
